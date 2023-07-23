@@ -1,0 +1,162 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background-image: url(https://www.codewizardshq.com/wp-content/uploads/2019/11/home-header-image-optimized.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.announcement__div{
+  display:flex;
+  justify-content: space-between;
+  padding: 0 5em;
+  background-color:#fdc437;
+  min-height:1em;
+}
+
+p{
+  font-size:0.9rem;
+  font-weight:600;
+}
+
+p a{
+  color:black;
+}
+
+.announcement--p-1, .enroll--a{
+  color:red;
+  
+}
+
+.enroll--a{
+  text-decoration: underline;
+}
+.enroll--a:hover{
+text-decoration: none;
+color:red;
+}
+
+.login--a:hover{
+  color:black;
+}
+
+.text-change1{
+  color:#aaa;
+}
+
+.text-change2{
+  color:#fdc437;
+}
+
+#nav{
+  display:flex;
+  flex-direction: row;
+  background-color:#5a686e;
+  opacity: 0.9;
+  justify-content: space-evenly;
+  padding: 1.8em;
+}
+
+.dropdown{
+  display:flex;
+  gap:1.7em;
+  color:white;
+}
+
+button{
+  padding:0.4em;
+  width:5em;
+}
+
+.enroll--btn{
+  color:#fdc437;
+  border:2px solid #fdc437;
+  background-color: transparent;
+  font-weight: 600;
+  color:white;
+  
+}
+
+.pricing--btn{
+  border:2px solid #5a686e;
+  background-color: transparent;
+  font-weight: 600;
+  color:white;
+}
+
+select{
+  background-color:transparent;
+  font-weight: 600;
+  color:white;
+  border: none;
+}
+
+.pricing--btn:hover, select:hover{
+  background-color:#fdc437;
+  color: #011e41;
+  font-size:1.2rem;
+}
+
+option:hover{
+  background-color:#011e41;
+  color: #fdc437;
+}
+
+.enroll--btn:hover{
+  background-color:#fdc437;
+  color: #011e41;
+  font-size:1.2rem;
+}
+
+.main{
+  display:flex;
+  flex-direction: column;
+  margin-top:4em;
+  gap:2em;
+  padding-left:2em;
+
+}
+
+.main--h1{
+  font-weight:700;
+  color:#011e41;
+}
+
+.main--p{
+  color:#011e41;
+  font-size:1.1rem;
+  font-weight:500;
+}
+
+@media screen and (max-width: 768px){
+  body{
+    background-repeat: no-repeat;
+    height: 100%;
+    background-image: url(https://www.codewizardshq.com/wp-content/uploads/2019/11/home-header-image-optimized.jpg);
+    height: 100%;
+    background-size: auto;
+  }
+
+  header{
+    max-width:100%;
+  }
+
+  .announcement__div{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #nav{
+    display:flex;
+    flex-direction: column;
+  }
+
+  .dropdown{
+    display:flex;
+    gap:0.6em;
+  }
+}
