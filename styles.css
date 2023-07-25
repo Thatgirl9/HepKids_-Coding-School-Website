@@ -318,9 +318,6 @@ body{
   color:var(--general-color);
 }
 
-.commit-btn a:hover, a:active{
-  color:var(--commitment-color);
-}
 
 
 .commit-btn{
@@ -339,7 +336,7 @@ body{
 
 .commit-btn:hover,
  .commit-btn:active{
-  background-color: var(--general-color);
+  background-color: var(--level-4-color);
   color:var(--commitment-color);
   cursor:pointer;
 }
