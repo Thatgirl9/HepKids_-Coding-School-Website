@@ -6,11 +6,14 @@
 
 :root{
   --general-color:#fff;
-  --primary-color:#fdc437;
+  /* --primary-color:#fdc437; */
+  --primary-color:rgb(236,72,153);
   --secondary-color:#5a686e;
   --text-color:#011e41;
-  --bg-color:#83abba;
-  --quaternary-color:#aaa;
+
+  /* --bg-color:#83abba; */
+  --bg-color:rgb(30,41,59);
+  --quaternary-color:#6f6e6e;
 
   /* CURRICULUM */
   --level-1-color:#048665;
@@ -19,7 +22,8 @@
   --level-4-color:#aa227d;
 
   /*COMMITMENT */
-  --commitment-color:#e26428;
+  /* --commitment-color:#e26428; */
+  --commitment-color:rgb(236,72,153);
 }
 
 body{
@@ -53,7 +57,7 @@ body{
 
 .div--h2{
   font-weight:800;
-  color:var(--text-color);
+  color:var(--general-color);
   font-size:2.25rem;
 }
 
@@ -354,6 +358,7 @@ body{
 
 .first--p{
   margin-left:2em;
+  color:var(--secondary-color);
 }
 
 
@@ -379,6 +384,79 @@ body{
   margin: 0 0.5em;
   display:inline-block;
 }
+
+
+/* FOOTER */
+
+.footer__section{
+  background-color:var(--bg-color);
+  color:var(--general-color);
+  padding:2em;
+}
+
+.footer--div{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap:2em;
+}
+
+.footer--div--1, .footer--div--2, .footer--div--3{
+  display:flex;
+  flex-direction:column;
+  gap:0.8em;
+  padding: 0.8em;
+  font-weight:600;
+}
+
+.footer--div--3{
+  margin-bottom: auto;
+}
+
+p a{
+  text-decoration: none;
+  color:var(--general-color);
+}
+
+p a:hover{
+  color:var(--primary-color);
+  text-decoration: underline var(--primary-color);
+}
+
+
+.footer--div--4{
+  margin-bottom: auto;
+  display:flex;
+  flex-direction:column;
+  gap:0.8em;
+  padding: 0.8em;
+}
+
+.text--bold{
+  font-weight:600;
+}
+
+.tel-phone:hover{
+  color:var(--secondary-color);
+}
+
+.copy__right{
+  display:flex;
+  gap:0.4em;
+  margin-top: 2em;
+  justify-content: right;
+  align-items: center;
+  font-size:0.8rem;
+  
+}
+
+.copy--right-p:hover{
+  color:var(--secondary-color);
+  cursor:pointer;
+  font-weight:400;
+}
+
+
 
 
 @media screen and (max-width: 768px){
@@ -440,6 +518,24 @@ body{
   gap:2em;
   margin:4em ;
 }
+
+.commit--h2{
+  font-size:1.30rem;
+}
+
+/* FOOTER */
+.footer--div{
+  display:flex;
+  flex-direction: column;
+  /* justify-content: left;
+  align-items: left; */
+  flex-wrap:wrap;
+  gap:2em;
+}
+
+.footer--div--1, .footer--div--2, .footer--div--3, .footer--div--4{
+  width:100%;
+}
 }
 
 
@@ -479,8 +575,15 @@ body{
     gap:3em;
   }
 
-  /* COMMITMENT */
-
+  /* FOOTER */
+  .footer--div{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    gap:2em;
+  }
 
 
 }
