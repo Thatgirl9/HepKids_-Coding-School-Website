@@ -6,10 +6,224 @@
   <title>CodeWizards</title>
 
   <link rel="stylesheet" href="styles.css"/>
-  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/64bf21a094cf5d49dc66320d/1h659mn06';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+    <style>
+        .bg-image {
+            background-image: url(/assets/img1.avif);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+            width: 100%;
+            position: relative;
+            /* opacity: 0; */
+            /* background-opacity:50 ; */
+            /* opacity: calc(100% - 0.5); */
+            background-color: rgba(0, 0, 0, 3);
+
+
+        }
+        * SCROLL TO TOP BUTTON */
+
+#scrollToTopButton {
+  display: none;
+  position: relative;
+  /* bottom: 20px; */
+  /* right: 20px; */
+  background-color: rgb(74, 175, 247);
+  padding: 0.8rem;
+  color: rgb(244, 246, 246);
+  z-index: 60;
+  border-radius: 30%;
+  transition: all 1s ease;
+  box-shadow: 0px 0px 1rem rgba(22, 22, 22, 0.408);
+  animation: vibrate 400ms linear infinite both alternate;
+  border: 1px solid rgb(74, 175, 247);
+}
+
+#scrollToTopButton.show {
+  display: block;
+}
+#scrollToTopButton:hover {
+  background-color: transparent;
+  color: rgb(74, 175, 247);
+  border: 1px solid rgb(74, 175, 247);
+}
+
+#scrollToTopButton i {
+  font-size: 2em;
+}
+
+#scrollToTopButton.active {
+  bottom: 2rem;
+}
+
+@keyframes vibrate {
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+        .swiper-button-prev{
+            
+color: g
+        }
+
+        .bg-image > div {
+            position: relative;
+            z-index: 1;
+        }
+      .group{
+        /* line-height: 3; */
+      }
+ 
+    </style>
 </head>
 <body>
- 
+ <div>
+   <div class="border-box fixed bg-pink-700">
+              <h1 class="text-xs text-white p-1 text-center">Welcome to HEPKIDS Coding Summer Class. <a href="/dist/create.html" class="hover:underline">Enroll for Free</a>
+              </h1>
+          </div>
+   <nav class="p-5 bg-slate-800 z-10 fixed w-full  md  shadow md:flex md:items-center md:justify-around">
+              <div class="flex justify-between items-center ">
+                <span class="text-2xl font-[Poppins] cursor-pointer">
+                  <h1 class="text-pink-600 font-serif font-extrabold bg-clip-text text-transparent bg-gradient-to-r flex items-center flex-shrink-0 from-pink-700 via-lime-500 to-red-600 text-4xl">HEPKIDS_</h1>
+               
+                </span>
+   
+                <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                  <ion-icon name="menu" class="text-slate-200" onclick="Menu(this)"></ion-icon>
+              </span>
+              </div>
+   
+              <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-slate-800 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+                <li class="mx-4 my-6 md:my-0">
+                  <a href="/index.html" class="text-slate-300 hover:bg-pink-700  hover:text-slate-200 px-4 py-3 hover:transition-all duration-9000 ease-in-out">HOME</a>
+                </li>
+                
+                <li class="mx-4 my-6 md:my-0">
+                  <a href="#curriculum" class="text-slate-300 hover:bg-pink-700  hover:text-slate-200 px-4 py-3 hover:transition-all duration-9000 ease-in-out">CURRICULUM</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                  <a href="#" class="text-slate-300 hover:bg-pink-700  hover:text-slate-200 px-4 py-3 hover:transition-all duration-9000 ease-in-out">CLASSES</a>
+                </li>
+               
+
+
+                <div class="group relative">
+                  <li><a href="#" class="text-slate-300  hover:bg-pink-600 hover:text-slate-200 px-4 py-3">ABOUT<i
+                              class="fas fa-caret-down ml-2 text-end  text-pink-600 text-1xl group-hover:text-white"></i></a>
+                  </li>
+                  <ul class="absolute bg-slate-800 border border-2 flex flex-col gap- border-slate-600  text-start hidden h-24  w-80  group-hover:block">
+                    <li><a href="/faq.html" class="text-slate-200 hover:text-pink-700">FAQ</a></li> 
+                    <li class=""><a href="#" class="text-slate-200 hover:text-pink-700">OUR STORY
+                          </a></li>
+                      <li><a href="#" class="text-slate-200 hover:text-pink-700">BLOG</a></li>
+                  </ul>
+              </div>
+
+                <li class="mx-4 my-6 md:my-0">
+                </li>
+   
+                <div class="block">
+                  
+                    <a href="/login.html" class="text-slate-300 font-[Poppins] duration-500 text-lg hover:underline px-4 py-3 text-slate-300 rounded">LOGIN</a>
+                 
+                
+                    <a href="/signup.html" class=" text-slate-200 text-lg font-[Poppins] duration-500 px-6 py-2 bg-pink-700 hover:bg-pink-800 rounded">SIGNUP</a>
+                 
+                </div>
+          <h2 class=""></h2>
+              </ul>
+            </nav>
+   
+          <!-- <div class="bg-slate-800 fixed z-10 w-full">
+              <nav class=" flex bg-slate-800 p-4 items-center flex-wrap justify-around ">
+                  <h1 class="text-pink-600 font-serif font-extrabold bg-clip-text text-transparent bg-gradient-to-r flex items-center flex-shrink-0 from-pink-700 via-lime-500 to-red-600 text-4xl">HEPKIDS_</h1>
+                  <ul class="flex gap-10 w-full flex-grow sm:flex sm:items-center sm:w-auto items-center">
+                      <li><a href="#"
+                              class="text-slate-300 hover:bg-pink-700  hover:text-slate-200 px-4 py-3 hover:transition-all duration-9000 ease-in-out sm:inline-block">HOME</a>
+                      </li>
+                      <li><a href="#" class="text-slate-300 hover:bg-pink-700 hover:transition-all hover:border-blue-500 transition duration-900 ease-in hover:text-slate-200 px-4 py-3">CURRICULUM</a>
+                      </li>
+                      <div class="group relative">
+                          <li><a href="#" class="text-slate-300  hover:bg-pink-600 hover:text-slate-200 px-4 py-3 sm:inline-block">CLASSES<i
+                                      class="fas fa-caret-down ml-2 text-end  text-pink-600 text-1xl group-hover:text-white"></i></a>
+                          </li>
+                          <ul class="absolute bg-slate-800 border border-2 flex flex-col gap- border-slate-600  text-start hidden h-28 mt-5 w-80  group-hover:block">
+                              <li class="hover:bg-pink-700"><a href="#" class="text-slate-300  hover:text-slate-200 font-bold text-lg hover:bg-red-950  ">ONLINE PRIVATE CLASS
+                                  </a></li>
+                              <li><a href="#" class="text-slate-300  text-end hover:text-slate-200  font-sans font-bold text-lg  pt-11 ">IN PERSON CLASS</a></li>
+                              <li><a href="#" class="text-slate-300   hover:text-slate-200 font-bold  text-lg  pt-11 ">SUMMER CLASS</a></li>
+                          </ul>
+                      </div>
+                      <div class="group relative">
+                          <li><a href="#" class="text-slate-300  hover:bg-pink-600 hover:text-slate-200 px-4 py-3">ABOUT<i
+                                      class="fas fa-caret-down ml-2 text-end  text-pink-600 text-1xl group-hover:text-white"></i></a>
+                          </li>
+                          <ul class="absolute bg-slate-800 border border-2 flex flex-col gap- border-slate-600  text-start hidden h-32 mt-5 w-80  group-hover:block">
+                              <li class="hover:bg-pink-700"><a href="#" class="text-slate-300  hover:text-slate-200 font-bold text-lg hover:bg-red- ">OUR STORY
+                                  </a></li>
+                              <li><a href="#" class="text-slate-300  text-end hover:text-slate-200   font-bold text-lg  pt-11 ">FAQ</a></li>
+                              <li><a href="#" class="text-slate-300   hover:text-slate-200 font-bold  text-lg  pt-11 ">BLOG</a></li>
+                          </ul>
+                      </div>
+   
+                      <div>
+                          <button class="text-slate-300 hover:underline"><a href="/dist/create.html sm:inline-block">SIGN UP|</a></button>
+                          <button class="text-slate-300 hover:underline"><a href="/dist/login.html sm:inline-block">|LOGIN</a></button>
+                      </div>
+   
+                  </ul>
+              </nav>
+          </div>-->
+ </div>
+
+
+        <section class="bg-image">
+          <div class=" px-10 pt-36 max-w-7xl text-center text-2xl   relative z-auto font-extrabold font-mono">
+              <blockquote class=" leading-relaxed font-extrabold text-4xl  my-5 text-white">
+              Online
+                  <span class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 relative inline-block">
+                    <span class="relative text-2xl text-black">CODING</span>
+                  </span>
+                  CLASSES FOR KIDS AND TEENS
+                </blockquote>
+              <p class="my-8  text-2xl text-slate-50">HepKids_ delivers the most fun and effective live, online coding classes for kids and
+                  teens ages 8-18. Our coding classes are designed to give kids the programming knowledge, skills, and
+                  confidence to thrive in a digital world.</p>
+              <div><button
+                      class="bg-pink-600 hover:bg-transparent hover:text-pink-600 hover:border hover:border-1 hover:border-pink-600 text-white px-6 py-4  mt-10"><a href="/signup.html">Enroll
+                      Now</a></button>
+                  <button
+                      class="border  group border-1 px-4 py-4 text-pink-600 border-pink-600 hover:bg-pink-600 hover:border-none hover:text-white">
+                      <a href="/signup.html">Join Waitlist </a><i
+                          class="fas fa-caret-right ml-2 text-end group-hover:text-white  text-pink-600 text-1xl"></i></button>
+              </div>
+          </div>
+      </section> 
+
+
 
 <section class="second-section"> 
 
@@ -17,11 +231,10 @@
 <div class="first--div">
   <div><img src="https://www.codewizardshq.com/wp-content/uploads/2019/10/star.svg" height="93px" width="69px" /></div>
   <div class="div-div">
-  <h2 class="div--h2">1000<span class="h2--span">'s</span></h2>
+  <h2 class="div--h2">100<span class="h2--span">'s</span></h2>
   <h4 class="div--h4">OF SATISFIED<br> STUDENTS</h4>
 </div>
 </div>
-
 <div class="first--div">
   <div><img src="https://www.codewizardshq.com/wp-content/uploads/2019/10/prize.svg" height="93px" width="98px" /></div>
   <div class="div-div">
@@ -34,7 +247,7 @@
 <div class="first--div">
   <div class="div--img"><img src="	https://www.codewizardshq.com/wp-content/uploads/2019/10/up.svg" width="94px" height="93px" class="img-div" /></div>
   <div class="div-div">
-  <h2 class="div--h2">7<span class="h2--span">YRS</span></h2>
+  <h2 class="div--h2">15<span class="h2--span">YRS</span></h2>
    <h4 class="div--h4"> LEADING ONLINE<br>
     CODING EDUCATION</h4>
   </div>
@@ -95,7 +308,7 @@
 <!-- CURRICULUM -->
 
 
-<div class="curriculum__div">
+<div id="curriculum" class="curriculum__div">
 
   <div class="curri--div--1 first-curri">
 
@@ -285,7 +498,7 @@
 
 <div class="commit__div2">
   <div>
-    <img src="https://d3t4xfu733v2tb.cloudfront.net/web/home/homepage/seal-2.png" width="200px" height="160px" alt="icon"/>
+    <img src="/assets/seal-2.png" width="200px" height="160px" alt="icon"/>
   </div>
 
   <div class="commit__div2__p">
@@ -304,6 +517,27 @@
 </div>
 
 </div>
+<blockquote class=" leading-relaxed text-center font-extrabold text-4xl  my-5 ">
+ Get
+      <span class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 relative inline-block">
+        <span class="relative text-3xl text-slate-100">Latest Updates</span>
+      </span>
+      On Our Programs
+    </blockquote>
+<div class="container mx-auto py-10">
+  <div class="max-w-md mx-auto bg-white p-8 border border-gray-300 rounded shadow">
+    <h2 class="text-2xl font-semibold mb-4">Subscribe to Our Page</h2>
+    <form action="#" method="post">
+      <label for="email" class="block mb-2 font-medium">First Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your first name" required class="w-full px-4 py-2 border border-gray-300 rounded">
+      <label for="email" class="block mb-2 font-medium">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email address" required class="w-full px-4 py-2 border border-gray-300 rounded">
+     
+     
+      <button type="submit" class="w-full mt-4 px-4 py-2 bg-pink-600 text-white font-semibold rounded hover:bg-pink-700 focus:outline-none focus:bg-pink-600">Subscribe</button>
+    </form>
+  </div>
+</div>
 
 
 <!-- FOOTER  -->
@@ -311,7 +545,10 @@
 <footer class="footer__section">
 
   <div class="footer--div">
-
+    <span class="text-2xl font-[Poppins] cursor-pointer">
+      <h1 class="text-pink-600 font-serif font-extrabold bg-clip-text text-transparent bg-gradient-to-r flex items-center flex-shrink-0 from-pink-700 via-lime-500 to-red-600 text-4xl">HEPKIDS_</h1>
+   
+    </span>
     <div class="footer--div--1">
       <p><a href="#">Programs</a></p>
       <p><a href="#">Summer Programs</a></p>
@@ -359,7 +596,24 @@
   </div>
 </footer>
 
-
+ <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="/main.js"></script>
+<script>
+     function Menu(e){
+  let list = document.querySelector('ul');
+  let listi = document.querySelector('a');
+  e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+}
+// close the menu when an item is clicked
+function closeMenu(){
+  let list = document.querySelector('a');
+  list.classList.remove('top-[80px]');
+  list.classList.remove('opacity-100');
+  let menu = document.querySelector('#menu');
+  menu.name = "menu";
+}
+menu.addEventListener('click',Menu);
+</script>
 </section>
 </body>
 </html>

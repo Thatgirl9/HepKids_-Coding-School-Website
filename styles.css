@@ -3,7 +3,11 @@
   padding:0;
   box-sizing:border-box;
 }
+html{
 
+overflow-x:hidden ;
+scroll-behavior: smooth;
+}
 :root{
   --general-color:#fff;
   /* --primary-color:#fdc437; */
@@ -29,6 +33,7 @@
 
 body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow-x: hidden;
 }
 
 
@@ -175,18 +180,7 @@ body{
   font-size:1.54rem;
 }
 
-/* .curri--h4{
-  font-weight:500;
-  font-size:1rem;
-  border-bottom: 3px solid var(--primary-color);
-}
 
-.curri--h4:hover, 
-.curri--h4:active{
-  color: var(--primary-color);
-  cursor:pointer;
-  font-weight:700;
-} */
 
 .h3--img{
   display:flex;
@@ -323,6 +317,7 @@ body{
 .commit-btn{
   display: flex;
   justify-content: center;
+  border: transparent;
   align-items: center;
   margin: 0 auto;
   padding:0.5em;
@@ -338,6 +333,7 @@ body{
  .commit-btn:active{
   background-color: var(--level-4-color);
   color:var(--commitment-color);
+  border: none;
   cursor:pointer;
 }
 
@@ -532,18 +528,6 @@ p a:hover{
 }
 
 /* FOOTER */
-.footer--div{
-  display:flex;
-  flex-direction: column;
-  /* justify-content: left;
-  align-items: left; */
-  flex-wrap:wrap;
-  gap:2em;
-}
-
-.footer--div--1, .footer--div--2, .footer--div--3, .footer--div--4{
-  width:100%;
-}
 
 .copy__right{
   display:flex;
@@ -558,12 +542,34 @@ p a:hover{
 
 }
 
-
+@media (max-width:980px) {
+  .footer--div{
+    display:flex;
+    flex-direction: column;
+    /* justify-content: left;
+    align-items: left; */
+    flex-wrap:wrap;
+    gap:2em;
+  }
+  
+  .footer--div--1, .footer--div--2, .footer--div--3, .footer--div--4{
+    width:100%;
+  }
+  .swiper{
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    
+  }
+}
 
 @media screen and (min-width: 769px){
   .second-section{
     width:100%;
   }
+
+
 
   .div1__container{
     width:100%;
