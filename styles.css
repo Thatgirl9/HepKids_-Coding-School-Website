@@ -418,6 +418,8 @@ p a{
   color:var(--general-color);
 }
 
+
+
 p a:hover{
   color:var(--primary-color);
   text-decoration: underline var(--primary-color);
@@ -469,6 +471,7 @@ p a:hover{
     display:flex;
     flex-direction:column;
     flex-wrap: wrap;
+    padding:1em 0;
   }
 
   .first--div{
@@ -477,6 +480,8 @@ p a:hover{
     gap:5em;
   }
 
+
+  /* PHILOSOPHY */
 
   .flex__container{
     display:flex;
