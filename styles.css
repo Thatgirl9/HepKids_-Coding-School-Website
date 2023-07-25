@@ -10,6 +10,7 @@
   --primary-color:rgb(236,72,153);
   --secondary-color:#5a686e;
   --text-color:#011e41;
+  /* --text-color:rgb(236,72,153); */
 
   /* --bg-color:#83abba; */
   --bg-color:rgb(30,41,59);
@@ -139,6 +140,8 @@ body{
 /* TO BE THE SAME LENGTH WITH THIRD CURRI */
 .first-curri{
   padding-bottom:2em;
+  border-bottom: 3px solid transparent;
+  
 }
 
 .first-curri,
@@ -149,7 +152,7 @@ body{
 
 
 .curri--div--1:hover, .curri--div--1:active{
-  border: 3px solid var(--primary-color);
+  box-shadow: 0 0 0 3px var(--primary-color);
   cursor:pointer;
  }
 
@@ -172,7 +175,7 @@ body{
   font-size:1.54rem;
 }
 
-.curri--h4{
+/* .curri--h4{
   font-weight:500;
   font-size:1rem;
   border-bottom: 3px solid var(--primary-color);
@@ -183,7 +186,7 @@ body{
   color: var(--primary-color);
   cursor:pointer;
   font-weight:700;
-}
+} */
 
 .h3--img{
   display:flex;
@@ -191,9 +194,9 @@ body{
   align-items: center;
 }
 
-.wizard__1__div, 
-.wizard__2__div, 
-.wizard__3__div{
+.hepkids__1__div, 
+.hepkids__2__div, 
+.hepkids__3__div{
   margin-top: 1em;
   margin-bottom: 2em;
   display:flex;
@@ -203,14 +206,14 @@ body{
   
 }
 
-.wizard--1--p, 
-.wizard--2--p, 
-.wizard--3--p{
+.hepkids--1--p, 
+.hepkids--2--p, 
+.hepkids--3--p{
   line-height: 1.5;
   display: flex;
 }
 
-.wizard--1--p::before{
+.hepkids--1--p::before{
   content: "•";
   font-size:1.20rem;
   color:var(--level-1-color);
@@ -218,7 +221,7 @@ body{
   display:inline-block;
 }
 
-.wizard--2--p::before{
+.hepkids--2--p::before{
   content: "•";
   font-size:1.20rem;
   color: var(--level-2-color);
@@ -226,7 +229,7 @@ body{
   display:inline-block;
 }
 
-.wizard--3--p::before{
+.hepkids--3--p::before{
   content: "•";
   font-size:1.20rem;
   color: var(--level-3-color);
@@ -234,7 +237,7 @@ body{
   display:inline-block;
 }
 
-.wizard--4--p::before{
+.hepkids--4--p::before{
   content: "•";
   font-size:1.20rem;
   color: var(--level-4-color);
@@ -516,7 +519,11 @@ p a:hover{
   justify-content: center;
   align-items: center;
   gap:2em;
-  margin:4em ;
+  margin:4em 0;
+}
+
+.commit__div2__p{
+  width:100%;
 }
 
 .commit--h2{
@@ -536,6 +543,18 @@ p a:hover{
 .footer--div--1, .footer--div--2, .footer--div--3, .footer--div--4{
   width:100%;
 }
+
+.copy__right{
+  display:flex;
+  gap:0.4em;
+  margin-top: 2em;
+  justify-content: right;
+  align-items: center;
+  flex-wrap:wrap;
+  font-size:0.8rem;
+  
+}
+
 }
 
 
@@ -585,5 +604,15 @@ p a:hover{
     gap:2em;
   }
 
+  .copy__right{
+    display:flex;
+    flex-wrap: wrap;
+    gap:0.4em;
+    margin-top: 2em;
+    justify-content: right;
+    align-items: center;
+    font-size:0.8rem;
+    
+  }
 
 }
