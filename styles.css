@@ -526,6 +526,10 @@ p a:hover{
   width:100%;
 }
 
+.first--p{
+  margin-left:1em;
+}
+
 .commit--h2{
   font-size:1.30rem;
 }
