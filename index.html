@@ -28,35 +28,41 @@
     <!--End of Tawk.to Script-->
     <style>
         .bg-image {
-            background-image: url(/assets/img1.avif);
+            background-image: url(/assets/img2.jpg);
             background-repeat: no-repeat;
             background-position: center;
+            background-size:auto;
             background-size: cover;
-            height: 100vh;
+            height: 100%;
             width: 100%;
-            position: relative;
             /* opacity: 0; */
             /* background-opacity:50 ; */
             /* opacity: calc(100% - 0.5); */
-            background-color: rgba(0, 0, 0, 3);
+            /* background-color: rgba(0, 0, 0, 3); */
 
 
+        }
+        .bg-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 200%;
+            background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) to control the darkness */
         }
       
-        .bg-image > div {
-            position: relative;
-            z-index: 1;
-        }
+      
       
  
     </style>
 </head>
 <body>
  <div>
-   <div class="border-box fixed bg-pink-700">
+   <!-- <div class="border-box fixed bg-pink-700">
               <h1 class="text-xs text-white p-1 text-center">Welcome to HEPKIDS Coding Summer Class. <a href="/dist/create.html" class="hover:underline">Enroll for Free</a>
               </h1>
-          </div>
+          </div> -->
    <nav class="p-5 bg-slate-800 z-10 fixed w-full  md  shadow md:flex md:items-center md:justify-around">
               <div class="flex justify-between items-center ">
                 <span class="text-2xl font-[Poppins] cursor-pointer">
@@ -69,7 +75,7 @@
               </span>
               </div>
    
-              <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-slate-800 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+              <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-slate-800 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0  pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
                 <li class="mx-4 my-6 md:my-0">
                   <a href="/index.html" class="text-slate-300 hover:bg-pink-700  hover:text-slate-200 px-4 py-3 hover:transition-all duration-9000 ease-in-out">HOME</a>
                 </li>
@@ -79,33 +85,31 @@
                 </li>
 
 
-      <li class="mx-4 my-6 md:my-0">
-        <a href="#" class="text-slate-300 hover:bg-pink-700  hover:text-slate-200 px-4 py-3 hover:transition-all duration-9000 ease-in-out">CLASSES</a>
-      </li>
-     
 
 
       <div class="group relative">
-        <li><a href="#" class="text-slate-300  hover:bg-pink-600 hover:text-slate-200 pl-10 text-center px-4 hover:px- hover:py-3">ABOUT<i
-                    class="fas fa-caret-down ml-2 text-end  text-pink-600 text-1xl group-hover:text-white"></i></a>
+        <li><a href="#" class="text-slate-300  hover:bg-pink-600 hover:text-slate-200 pl-10 px-4 lg:text-1xl hover:py-3">ABOUT</a>
         </li>
         <ul class="absolute bg-slate-800 border border-2 flex flex-col gap- border-slate-600  text-start hidden h-24  w-80  group-hover:block">
           <li><a href="/faq.html" class="text-slate-200 hover:text-pink-700">FAQ</a></li> 
           <li class=""><a href="/story.html" class="text-slate-200 hover:text-pink-700">OUR STORY
                 </a></li>
-            <li><a href="#" class="text-slate-200 hover:text-pink-700">BLOG</a></li>
+            <li><a href="https://stephen01.hashnode.dev/" class="text-slate-200 hover:text-pink-700">BLOG</a></li>
         </ul>
     </div>
-
       <li class="mx-4 my-6 md:my-0">
+        <a href="/contact.html" class="text-slate-300 hover:bg-pink-700  hover:text-slate-200 px-2 py-3 hover:transition-all duration-9000 ease-in-out">CONTACT</a>
       </li>
+     
+
+      
 
       <div class="block">
         
-          <a href="/login.html" class="text-slate-300text-center font-[Poppins] duration-500 text-lg hover:underline px-4 py-3 text-slate-300 rounded">LOGIN</a>
+          <a href="/login.html" class="text-slate-300text-center font-[Poppins] duration-500 text-lg hover:underline px-4  py-3 text-slate-300 rounded">LOGIN</a>
        
       
-          <a href="/signup.html" class=" text-slate-200 text-lg font-[Poppins] duration-500 px-6 py-2 bg-pink-700 hover:bg-pink-800 rounded">SIGNUP</a>
+          <a href="/signup.html" class=" text-slate-200 text-lg font-[Poppins] duration-500 px-6 py-2 bg-pink-700  hover:bg-pink-800 rounded">SIGNUP</a>
        
       </div>
 <h2 class=""></h2>
@@ -123,31 +127,39 @@
 
 
         <section class="bg-image">
-          <div class="pt-32 md:px-10 md:pt-36 md:max-w-7xl text-center md:text-2xl   relative z-auto font-bold font-mono">
-              <blockquote class=" leading-relaxed font-extrabold text-2xl md:text-4xl  md:my-5 text-white">
-              Online
+          <div class="pt-32 md:px-10 md:pt-36 md:max-w-7xl text-center md:text-2xl   z-10 font-bold font-mono">
+            <div class="bg-overlay"></div>
+              <blockquote class=" leading-relaxed font-extrabold relative text-2xl md:text-4xl  md:my-5 text-white">
+              ONLINE
                   <span class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 relative inline-block">
                     <span class="relative text-2xl text-black">CODING</span>
                   </span>
                   CLASSES FOR KIDS AND TEENS
                 </blockquote>
-              <p class="md:my-8  md:text-2xl text-slate-50">HepKids_ delivers the most fun and effective live, online coding classes for kids and
+              <p class="md:my-8 mt-10 text-sm md:text-2xl relative text-white">HepKids_ delivers the most fun and effective live, online coding classes for kids and
                   teens ages 8-18. Our coding classes are designed to give kids the programming knowledge, skills, and
-                  confidence to thrive in a digital world.</p>
-              <div class="mt-5"><button
-                      class="bg-pink-600  hover:bg-transparent hover:text-pink-600 hover:border hover:border-1 hover:border-pink-600 text-white py-2 px-4 sm:px-6 sm:py-4  sm:mt-10"><a href="/signup.html">Enroll
+                  confidence to thrive in a digital world.<div class="mt-4   relative"><button
+                    class="bg-pink-600  hover:bg-transparent  hover:text-pink-600 hover:border hover:border-1 hover:border-pink-600 text-white py-2 px-4 sm:px-6 sm:py-4  sm:mt-10"><a href="/signup.html">Enroll
+                    Now</a></button>
+                <button
+                    class="border  group border-1 py-2 px-3 sm:px-2 sm:py-4 text-pink-600 border-pink-600 hover:bg-pink-600 hover:border-none hover:text-white">
+                    <a href="/signup.html">Join Waitlist </a><i
+                        class="fas fa-caret-right ml-2 text-end group-hover:text-white  text-pink-600 text-1xl"></i></button>
+            </div></p>
+              <!-- <div class="mt-14 mb-10 lg:mb-20 relative"><button
+                      class="bg-pink-600  hover:bg-transparent  hover:text-pink-600 hover:border hover:border-1 hover:border-pink-600 text-white py-2 px-4 sm:px-6 sm:py-4  sm:mt-10"><a href="/signup.html">Enroll
                       Now</a></button>
                   <button
                       class="border  group border-1 py-2 px-3 sm:px-2 sm:py-4 text-pink-600 border-pink-600 hover:bg-pink-600 hover:border-none hover:text-white">
                       <a href="/signup.html">Join Waitlist </a><i
                           class="fas fa-caret-right ml-2 text-end group-hover:text-white  text-pink-600 text-1xl"></i></button>
-              </div>
+              </div> -->
           </div>
       </section> 
 
 
 
-<section class="second-section"> 
+<section class="second-section mt- relative"> 
 
 <div class="div1__container">
 <div class="first--div">
@@ -192,7 +204,7 @@
 <div class="div-2__container">
 <div class="div2__container flex__container">
   <div class="grid1__div flex__div1">
-    <img src="https://d3t4xfu733v2tb.cloudfront.net/web/home/homepage/teaching-philosophy/continuous-curriculum.png" width="120px " height="120px" alt="icon"/>
+    <img src="https://d3t4xfu733v2tb.cloudfront.net/web/home/homepage/teaching-philosophy/continuous-curriculum.png" width="120px " style="margin: 0 auto;" height="120px" alt="icon"/>
 
     <h3 class="flex__h3">PROGRESSIVE <br class="hidden"> CURRICULUM</h3>
     <div class="small--line"></div>
@@ -201,7 +213,7 @@
   </div>
 
   <div class="grid1__div flex__div1">
-    <img src="https://d3t4xfu733v2tb.cloudfront.net/web/home/homepage/teaching-philosophy/skills-first.png" width="120px" height="120px" alt="icon"/>
+    <img src="https://d3t4xfu733v2tb.cloudfront.net/web/home/homepage/teaching-philosophy/skills-first.png" width="120px" style="margin: 0 auto";  alt="icon"/>
 
     <h3 class="flex__h3">SKILLS FIRST,<br class="hidden"> TOOLS SECOND</h3>
     <div class="small--line"></div>
@@ -210,7 +222,7 @@
 </div>
 
 <div class="grid1__div flex__div1">
-  <img src="https://d3t4xfu733v2tb.cloudfront.net/web/home/homepage/teaching-philosophy/project-focused.png" width="120px" height="120px" alt="icon"/>
+  <img src="https://d3t4xfu733v2tb.cloudfront.net/web/home/homepage/teaching-philosophy/project-focused.png" style="margin: 0 auto"; width="120px" height="120px" alt="icon"/>
   <h3 class="flex__h3">PROJECT <br class="hidden"> FOCUSED</h3>
     <div class="small--line"></div>
     <p class="flex__p"><span class="bold--text">No boring theory lectures!</span></p>
@@ -218,7 +230,7 @@
 </div>
 
 <div class="grid1__div flex__div1">
-<img src="https://d3t4xfu733v2tb.cloudfront.net/web/home/homepage/teaching-philosophy/individualized-approach.png" width="120px" height="120px" alt="icon"/>
+<img src="https://d3t4xfu733v2tb.cloudfront.net/web/home/homepage/teaching-philosophy/individualized-approach.png" style="margin: 0 auto"; width="120px" height="120px" alt="icon"/>
 <h3 class="flex__h3">INDIVIDUALIZED <br class="hidden"> APPROACH</h3>
 <div class="small--line"></div>
 <p class="flex__p">We recognize that each child learns<br> differently. Our curriculum allows<br> students to <span class="bold--text">advance at their own<br> pace</span>. Our goal is that no one is left<br> in the dust and no one is bored by<br> slow progress.</p>
@@ -510,7 +522,7 @@
 <div class="container mx-auto py-10">
   <div class="max-w-md mx-auto bg-white p-8 border border-gray-300 rounded shadow">
     <h2 class="text-2xl font-semibold mb-4">Subscribe to Our Page</h2>
-    <form action="#" method="post">
+    <form action="https://formspree.io/f/xoqzgdjk" method="post">
       <label for="email" class="block mb-2 font-medium">First Name:</label>
       <input type="text" id="name" name="name" placeholder="Enter your first name" required class="w-full px-4 py-2 border border-gray-300 rounded">
       <label for="email" class="block mb-2 font-medium">Email:</label>
