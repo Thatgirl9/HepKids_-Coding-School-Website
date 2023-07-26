@@ -153,12 +153,14 @@ body{
 .second-curri, 
 .third-curri{
   margin-bottom:auto;
+  border: 0.5px solid grey;
 }
 
 
 .curri--div--1:hover, .curri--div--1:active{
   box-shadow: 0 0 0 3px var(--primary-color);
   cursor:pointer;
+  border: none;
  }
 
 
@@ -274,6 +276,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .commit--h2{
@@ -297,8 +300,10 @@ body{
   color:var(--secondary-color);
   padding: 0 2em;
 }
-
-.commit--h2, .commit--h3{
+.commit--h2{
+  text-align: center;
+}
+ .commit--h3{
   text-align: center;
   color:var(--commitment-color);
 }

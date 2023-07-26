@@ -42,59 +42,12 @@
 
 
         }
-        * SCROLL TO TOP BUTTON */
-
-#scrollToTopButton {
-  display: none;
-  position: relative;
-  /* bottom: 20px; */
-  /* right: 20px; */
-  background-color: rgb(74, 175, 247);
-  padding: 0.8rem;
-  color: rgb(244, 246, 246);
-  z-index: 60;
-  border-radius: 30%;
-  transition: all 1s ease;
-  box-shadow: 0px 0px 1rem rgba(22, 22, 22, 0.408);
-  animation: vibrate 400ms linear infinite both alternate;
-  border: 1px solid rgb(74, 175, 247);
-}
-
-#scrollToTopButton.show {
-  display: block;
-}
-#scrollToTopButton:hover {
-  background-color: transparent;
-  color: rgb(74, 175, 247);
-  border: 1px solid rgb(74, 175, 247);
-}
-
-#scrollToTopButton i {
-  font-size: 2em;
-}
-
-#scrollToTopButton.active {
-  bottom: 2rem;
-}
-
-@keyframes vibrate {
-  100% {
-    transform: translateY(5px);
-  }
-}
-
-        .swiper-button-prev{
-            
-color: g
-        }
-
+      
         .bg-image > div {
             position: relative;
             z-index: 1;
         }
-      .group{
-        /* line-height: 3; */
-      }
+      
  
     </style>
 </head>
@@ -124,99 +77,68 @@ color: g
                 <li class="mx-4 my-6 md:my-0">
                   <a href="#curriculum" class="text-slate-300 hover:bg-pink-700  hover:text-slate-200 px-4 py-3 hover:transition-all duration-9000 ease-in-out">CURRICULUM</a>
                 </li>
-                <li class="mx-4 my-6 md:my-0">
-                  <a href="#" class="text-slate-300 hover:bg-pink-700  hover:text-slate-200 px-4 py-3 hover:transition-all duration-9000 ease-in-out">CLASSES</a>
-                </li>
+
+
+      <li class="mx-4 my-6 md:my-0">
+        <a href="#" class="text-slate-300 hover:bg-pink-700  hover:text-slate-200 px-4 py-3 hover:transition-all duration-9000 ease-in-out">CLASSES</a>
+      </li>
+     
+
+
+      <div class="group relative">
+        <li><a href="#" class="text-slate-300  hover:bg-pink-600 hover:text-slate-200 pl-10 text-center px-4 hover:px- hover:py-3">ABOUT<i
+                    class="fas fa-caret-down ml-2 text-end  text-pink-600 text-1xl group-hover:text-white"></i></a>
+        </li>
+        <ul class="absolute bg-slate-800 border border-2 flex flex-col gap- border-slate-600  text-start hidden h-24  w-80  group-hover:block">
+          <li><a href="/faq.html" class="text-slate-200 hover:text-pink-700">FAQ</a></li> 
+          <li class=""><a href="/story.html" class="text-slate-200 hover:text-pink-700">OUR STORY
+                </a></li>
+            <li><a href="#" class="text-slate-200 hover:text-pink-700">BLOG</a></li>
+        </ul>
+    </div>
+
+      <li class="mx-4 my-6 md:my-0">
+      </li>
+
+      <div class="block">
+        
+          <a href="/login.html" class="text-slate-300text-center font-[Poppins] duration-500 text-lg hover:underline px-4 py-3 text-slate-300 rounded">LOGIN</a>
+       
+      
+          <a href="/signup.html" class=" text-slate-200 text-lg font-[Poppins] duration-500 px-6 py-2 bg-pink-700 hover:bg-pink-800 rounded">SIGNUP</a>
+       
+      </div>
+<h2 class=""></h2>
+    </ul>
+   
+  </nav>
+ <!-- <div class="border-box bg-pink-700">
+      <h1 class="text-xs text-white p-1 text-center">Welcome to HEPKIDS Coding Summer Class. <a href="/signup.html" class="hover:underline">Enroll for Free</a>
+      </h1>
+  </div> -->
                
-
-
-                <div class="group relative">
-                  <li><a href="#" class="text-slate-300  hover:bg-pink-600 hover:text-slate-200 px-4 py-3">ABOUT<i
-                              class="fas fa-caret-down ml-2 text-end  text-pink-600 text-1xl group-hover:text-white"></i></a>
-                  </li>
-                  <ul class="absolute bg-slate-800 border border-2 flex flex-col gap- border-slate-600  text-start hidden h-24  w-80  group-hover:block">
-                    <li><a href="/faq.html" class="text-slate-200 hover:text-pink-700">FAQ</a></li> 
-                    <li class=""><a href="#" class="text-slate-200 hover:text-pink-700">OUR STORY
-                          </a></li>
-                      <li><a href="#" class="text-slate-200 hover:text-pink-700">BLOG</a></li>
-                  </ul>
-              </div>
-
-                <li class="mx-4 my-6 md:my-0">
-                </li>
    
-                <div class="block">
-                  
-                    <a href="/login.html" class="text-slate-300 font-[Poppins] duration-500 text-lg hover:underline px-4 py-3 text-slate-300 rounded">LOGIN</a>
-                 
-                
-                    <a href="/signup.html" class=" text-slate-200 text-lg font-[Poppins] duration-500 px-6 py-2 bg-pink-700 hover:bg-pink-800 rounded">SIGNUP</a>
-                 
-                </div>
-          <h2 class=""></h2>
-              </ul>
-            </nav>
-   
-          <!-- <div class="bg-slate-800 fixed z-10 w-full">
-              <nav class=" flex bg-slate-800 p-4 items-center flex-wrap justify-around ">
-                  <h1 class="text-pink-600 font-serif font-extrabold bg-clip-text text-transparent bg-gradient-to-r flex items-center flex-shrink-0 from-pink-700 via-lime-500 to-red-600 text-4xl">HEPKIDS_</h1>
-                  <ul class="flex gap-10 w-full flex-grow sm:flex sm:items-center sm:w-auto items-center">
-                      <li><a href="#"
-                              class="text-slate-300 hover:bg-pink-700  hover:text-slate-200 px-4 py-3 hover:transition-all duration-9000 ease-in-out sm:inline-block">HOME</a>
-                      </li>
-                      <li><a href="#" class="text-slate-300 hover:bg-pink-700 hover:transition-all hover:border-blue-500 transition duration-900 ease-in hover:text-slate-200 px-4 py-3">CURRICULUM</a>
-                      </li>
-                      <div class="group relative">
-                          <li><a href="#" class="text-slate-300  hover:bg-pink-600 hover:text-slate-200 px-4 py-3 sm:inline-block">CLASSES<i
-                                      class="fas fa-caret-down ml-2 text-end  text-pink-600 text-1xl group-hover:text-white"></i></a>
-                          </li>
-                          <ul class="absolute bg-slate-800 border border-2 flex flex-col gap- border-slate-600  text-start hidden h-28 mt-5 w-80  group-hover:block">
-                              <li class="hover:bg-pink-700"><a href="#" class="text-slate-300  hover:text-slate-200 font-bold text-lg hover:bg-red-950  ">ONLINE PRIVATE CLASS
-                                  </a></li>
-                              <li><a href="#" class="text-slate-300  text-end hover:text-slate-200  font-sans font-bold text-lg  pt-11 ">IN PERSON CLASS</a></li>
-                              <li><a href="#" class="text-slate-300   hover:text-slate-200 font-bold  text-lg  pt-11 ">SUMMER CLASS</a></li>
-                          </ul>
-                      </div>
-                      <div class="group relative">
-                          <li><a href="#" class="text-slate-300  hover:bg-pink-600 hover:text-slate-200 px-4 py-3">ABOUT<i
-                                      class="fas fa-caret-down ml-2 text-end  text-pink-600 text-1xl group-hover:text-white"></i></a>
-                          </li>
-                          <ul class="absolute bg-slate-800 border border-2 flex flex-col gap- border-slate-600  text-start hidden h-32 mt-5 w-80  group-hover:block">
-                              <li class="hover:bg-pink-700"><a href="#" class="text-slate-300  hover:text-slate-200 font-bold text-lg hover:bg-red- ">OUR STORY
-                                  </a></li>
-                              <li><a href="#" class="text-slate-300  text-end hover:text-slate-200   font-bold text-lg  pt-11 ">FAQ</a></li>
-                              <li><a href="#" class="text-slate-300   hover:text-slate-200 font-bold  text-lg  pt-11 ">BLOG</a></li>
-                          </ul>
-                      </div>
-   
-                      <div>
-                          <button class="text-slate-300 hover:underline"><a href="/dist/create.html sm:inline-block">SIGN UP|</a></button>
-                          <button class="text-slate-300 hover:underline"><a href="/dist/login.html sm:inline-block">|LOGIN</a></button>
-                      </div>
-   
-                  </ul>
-              </nav>
-          </div>-->
+     
  </div>
 
 
         <section class="bg-image">
-          <div class=" px-10 pt-36 max-w-7xl text-center text-2xl   relative z-auto font-extrabold font-mono">
-              <blockquote class=" leading-relaxed font-extrabold text-4xl  my-5 text-white">
+          <div class="pt-32 md:px-10 md:pt-36 md:max-w-7xl text-center md:text-2xl   relative z-auto font-bold font-mono">
+              <blockquote class=" leading-relaxed font-extrabold text-2xl md:text-4xl  md:my-5 text-white">
               Online
                   <span class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 relative inline-block">
                     <span class="relative text-2xl text-black">CODING</span>
                   </span>
                   CLASSES FOR KIDS AND TEENS
                 </blockquote>
-              <p class="my-8  text-2xl text-slate-50">HepKids_ delivers the most fun and effective live, online coding classes for kids and
+              <p class="md:my-8  md:text-2xl text-slate-50">HepKids_ delivers the most fun and effective live, online coding classes for kids and
                   teens ages 8-18. Our coding classes are designed to give kids the programming knowledge, skills, and
                   confidence to thrive in a digital world.</p>
-              <div><button
-                      class="bg-pink-600 hover:bg-transparent hover:text-pink-600 hover:border hover:border-1 hover:border-pink-600 text-white px-6 py-4  mt-10"><a href="/signup.html">Enroll
+              <div class="mt-5"><button
+                      class="bg-pink-600  hover:bg-transparent hover:text-pink-600 hover:border hover:border-1 hover:border-pink-600 text-white py-2 px-4 sm:px-6 sm:py-4  sm:mt-10"><a href="/signup.html">Enroll
                       Now</a></button>
                   <button
-                      class="border  group border-1 px-4 py-4 text-pink-600 border-pink-600 hover:bg-pink-600 hover:border-none hover:text-white">
+                      class="border  group border-1 py-2 px-3 sm:px-2 sm:py-4 text-pink-600 border-pink-600 hover:bg-pink-600 hover:border-none hover:text-white">
                       <a href="/signup.html">Join Waitlist </a><i
                           class="fas fa-caret-right ml-2 text-end group-hover:text-white  text-pink-600 text-1xl"></i></button>
               </div>
@@ -306,7 +228,7 @@ color: g
 
 
 <!-- CURRICULUM -->
-
+<span><h1 class="text-center font-extrabold text-3xl">CURRICULUM</h1></span>
 
 <div id="curriculum" class="curriculum__div">
 
@@ -366,7 +288,7 @@ color: g
   <div class="curri--div--1 second-curri">
 
     <div class="div--i">
-    <div><h3 class="curri--h3">Ages <span class="age-color">8-12</span></h3></div>
+    <div><h3 class="curri--h3">Ages <span class="age-color">6-7</span></h3></div>
     <!-- <div><h4 class="curri--h4">Select</h4></div> -->
   </div>
 
@@ -417,6 +339,67 @@ color: g
 
   <!-- 3 -->
 
+  <div class="curri--div--1 third-curri">
+
+    <div class="div--i">
+    <div><h3 class="curri--h3">Ages <span class="age-color">8-12</span></h3></div>
+    <!-- <div><h4 class="curri--h4">Select</h4></div> -->
+  </div>
+
+  <div class="div--ii">
+    <div class="h3--img">
+      <img src="https://www.codewizardshq.com/wp-content/uploads/2019/10/level-1.svg" width="32px" height="43px"/> 
+      <h3 class="div-ii-h2"><span class="blue--text">HEPKIDS</span> <span class="green--text">LEVEL I</span></h3>
+  </div>
+
+    <div class="hepkids__1__div">
+      <p class="hepkids--1--p">Intro to Python</p>
+      <p class="hepkids--1--p">Fundamentals of Web<br>
+        Development</p>
+      <p class="hepkids--1--p">User Interface Development</p>
+      <p class="hepkids--1--p"><span class="green--text">Capstone I</span></p>
+</div>
+  </div>
+
+  <div class="div--iii">
+    <div class="h3--img">
+      <img src="https://www.codewizardshq.com/wp-content/uploads/2019/10/level-2.svg" width="32px" height="43px"/> 
+      <h3 class="div-ii-h2"><span class="blue--text">HEPKIDS</span> <span class="light--blue--text">LEVEL II</span></h3>
+    </div>
+
+    <div class="hepkids__2__div">
+      <p class="hepkids--2--p">APIs and Databases</p>
+      <p class="hepkids--2--p">Professional Web App<br> Development</p>
+      <p class="hepkids--2--p">Modern CSS Framework</p>
+      <p class="hepkids--2--p"><span class="light--blue--text">Capstone II</span></p>
+    </div>
+  </div>
+
+  <div class="div-iv">
+    <div class="h3--img">
+      <img src="https://www.codewizardshq.com/wp-content/uploads/2019/10/level-3.svg" width="32px" height="43px"/> 
+      <h3 class="div-ii-h2"><span class="blue--text">HEPKIDS</span> <span class="purple--text">LEVEL III</span></h3>
+    </div>
+
+    <div class="hepkids__3__div">
+      <p class="hepkids--3--p">Mastering MVC Framework</p>
+      <p class="hepkids--3--p">ORM</p>
+      <p class="hepkids--3--p">DevOps and Software <br> Engineering</p>
+      <p class="hepkids--3--p">Interactive Websites with<br> JavaScript</p>
+      <p class="hepkids--3--p"><span class="purple--text">Capstone III</span></p>
+  </div>
+  </div>
+  
+    <div class="div--ii">
+      <div class="h3--img">
+        <img src="https://www.codewizardshq.com/wp-content/uploads/2019/10/level-4.svg" width="32px" height="43px"/> 
+        <h3 class="div-ii-h2"><span class="pink--text">INTERNSHIP</span> <span class="blue--text">PROGRAM</span></h3>
+        </div>
+        <div class="hepkids__3__div">
+          <p class="hepkids--4--p">Real-World Project</p>
+        </div>
+    </div>
+  </div>
   <div class="curri--div--1 third-curri">
 
     <div class="div--i">
@@ -487,14 +470,14 @@ color: g
 
 <div class="commitment__div">
   <div class="commit__div">
-  <h2 class="commit--h2">COMMITMENT TO QUALITY</h2>
+  <h2 class="commit--h2 font-extrabold">COMMITMENT TO QUALITY</h2>
 
 <p class="commit--p">It is essential that every one of our students has an excellent experience in our classes. The quality of our classes and the satisfaction of our students is always our top consideration.</p>
 
 <h3 class="commit--h3">TOGETHER, we make that happen!</h3>
 <p class="commit--p commit--p2">We take many steps to make our classes great for students but know that not everything goes 100%. Should your experience in our classes be anything less than fabulous, please reach out to us right away! We will work with you to adapt the class to your student’s needs or to find them a different class to provide the best experience.</p>
 
-<button class="commit-btn"><a href="#">Reach Out To Us</a></button>
+<button class="commit-btn"><a href="/signup.html">Reach Out To Us</a></button>
 
 <div class="commit__div2">
   <div>
@@ -517,10 +500,10 @@ color: g
 </div>
 
 </div>
-<blockquote class=" leading-relaxed text-center font-extrabold text-4xl  my-5 ">
+<blockquote class=" leading-relaxed text-center font-extrabold sm:text-4xl  my-5 ">
  Get
       <span class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 relative inline-block">
-        <span class="relative text-3xl text-slate-100">Latest Updates</span>
+        <span class="relative sm:text-3xl text-slate-100">Latest Updates</span>
       </span>
       On Our Programs
     </blockquote>
@@ -596,7 +579,6 @@ color: g
   </div>
 </footer>
 
- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="/main.js"></script>
 <script>
      function Menu(e){

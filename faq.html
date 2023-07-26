@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
     <!--Start of Tawk.to Script-->
 <script type="text/javascript">
@@ -40,9 +48,7 @@
                        <a href="/index.html" class="text-slate-300 hover:bg-pink-700  hover:text-slate-200 px-4 py-3 hover:transition-all duration-9000 ease-in-out">HOME</a>
                      </li>
                      
-                     <li class="mx-4 my-6 md:my-0">
-                       <a href="#curriculum" class="text-slate-300 hover:bg-pink-700  hover:text-slate-200 px-4 py-3 hover:transition-all duration-9000 ease-in-out">CURRICULUM</a>
-                     </li>
+                     
                      <li class="mx-4 my-6 md:my-0">
                        <a href="#" class="text-slate-300 hover:bg-pink-700  hover:text-slate-200 px-4 py-3 hover:transition-all duration-9000 ease-in-out">CLASSES</a>
                      </li>
@@ -55,7 +61,7 @@
                        </li>
                        <ul class="absolute bg-slate-800 border border-2 flex flex-col gap- border-slate-600  text-start hidden h-24  w-80  group-hover:block">
                          <li><a href="/faq.html" class="text-slate-200 hover:text-pink-700">FAQ</a></li> 
-                         <li class=""><a href="#" class="text-slate-200 hover:text-pink-700">OUR STORY
+                         <li class=""><a href="/story.html" class="text-slate-200 hover:text-pink-700">OUR STORY
                                </a></li>
                            <li><a href="#" class="text-slate-200 hover:text-pink-700">BLOG</a></li>
                        </ul>
@@ -76,7 +82,10 @@
                    </ul>
                  </nav>
       </div>
-     
+     <br>
+     <br>
+     <br>
+    
 
     <section id="" class="bg-gray-100 py-10 px-6 ">
     
@@ -129,7 +138,78 @@
           </div>
     </section>
     
+    <footer class="footer__section ">
 
+      <div class="footer--div">
+        <span class="text-2xl font-[Poppins] cursor-pointer">
+          <h1 class="text-pink-600 font-serif font-extrabold bg-clip-text text-transparent bg-gradient-to-r flex items-center flex-shrink-0 from-pink-700 via-lime-500 to-red-600 text-4xl">HEPKIDS_</h1>
+       
+        </span>
 
+    
+        <div class="footer--div--1">
+          <p><a href="#">Programs</a></p>
+          <p><a href="#">Summer Programs</a></p>
+          <p><a href="#">Homeschool</a></p>
+          <p><a href="#">After School Program</a></p>
+          <p><a href="#">Pricing</a></p>
+          <p><a href="#">Blog</a></p>
+          <p><a href="#">Calendar</a></p>
+        </div>
+    
+        <div class="footer--div--2">
+          <p><a href="#">About</a></p>
+          <p><a href="#">Scholarships</a></p>
+          <p><a href="#">Military</a></p>
+          <p><a href="#">Affiliate Program</a></p>
+          <p><a href="#">Jobs</a></p>
+          <p><a href="#">Subscribe</a></p>
+          <p><a href="#">Referral Program</a></p>
+        </div>
+    
+        <div class="footer--div--3">
+          <p><a href="#">Student Center</a></p>
+          <p><a href="#">Reviews</a></p>
+          <p><a href="#">FAQs</a></p>
+          <p><a href="#">Contact Us</a></p>
+          <p><a href="#">Enroll</a></p>
+        </div>
+    
+        <div class="footer--div--4">
+          <p class="text--bold">Mailing Address:</p>
+          <p>11900 Jollyville Rd,</p>
+          <p>#203278</p> 
+          <p>Austin, Texas, 78720</p>
+          <p class="text--bold tel-phone">1-800-213-2417</p>
+          <p>Monday - Friday</p>  
+          <p>9:00am - 5:00pm CT</p>
+        </div>
+    
+      </div>
+    
+      <div class="copy__right">
+        <P class="copy--right-p">Privacy Policy |</P>
+        <p class="copy--right-p">Terms of Service |</p>
+        <p class="copy--right-p">© Copyright 2019 </p>
+      </div>
+    </footer>
+
+</section>
+<script>
+  function Menu(e){
+let list = document.querySelector('ul');
+let listi = document.querySelector('a');
+e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+}
+// close the menu when an item is clicked
+function closeMenu(){
+let list = document.querySelector('a');
+list.classList.remove('top-[80px]');
+list.classList.remove('opacity-100');
+let menu = document.querySelector('#menu');
+menu.name = "menu";
+}
+menu.addEventListener('click',Menu);
+</script>
 </body>
 </html>

@@ -29,7 +29,9 @@
   /* STORY TEXT-COLOR */
   --story--text-color: #000;
 }
-
+.bg-center{
+  height: 700px;
+}
 body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
