@@ -102,21 +102,6 @@ body{
   text-align: center;
 }
 
-.flex__div1{
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.flex__div3{
-  display:flex;
-  flex-direction: column;
-}
-
-.philosophy--icon--3{
-align-self: center;
-}
 
 
 
@@ -143,6 +128,30 @@ align-self: center;
   font-weight:bold;
 }
 
+.bg-image {
+  background-image: url(/assets/img2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:auto;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  /* opacity: 0; */
+  /* background-opacity:50 ; */
+  /* opacity: calc(100% - 0.5); */
+  /* background-color: rgba(0, 0, 0, 3); */
+
+
+}
+.bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) to control the darkness */
+}
 
 /* CURRICULUM */
 
