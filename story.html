@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./story.css"/>
   <title>Our Story</title>
+  <link rel="stylesheet" href="styles.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -31,8 +32,10 @@
   <nav class="p-5 bg-slate-800 top-0 z-10 fixed w-full shadow md:flex md:items-center md:justify-around">
     <div class="flex justify-between items-center ">
       <span class="text-2xl font-[Poppins] cursor-pointer">
-        <h1 class="text-pink-600 font-serif font-extrabold bg-clip-text text-transparent bg-gradient-to-r flex items-center flex-shrink-0 from-pink-700 via-lime-500 to-red-600 text-4xl">HEPKIDS_</h1>
-     
+        <h1
+        class="text-pink-600 font-serif font-extrabold bg-clip-text text-transparent bg-gradient-to-r flex items-center flex-shrink-0 from-orange-700 via-lime-500 to-yellow-200 text-4xl">
+        HEPKIDS_</h1>
+
       </span>
 
       <span class="text-3xl cursor-pointer mx-2 md:hidden block">
@@ -42,38 +45,38 @@
 
     <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-slate-800 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
       <li class="mx-4 my-6 md:my-0">
-        <a href="/index.html" class="text-slate-300 hover:bg-pink-700  hover:text-slate-200 px-4 py-3 hover:transition-all duration-9000 ease-in-out">HOME</a>
+        <a href="/index.html" class="text-slate-300 hover:bg-orange-500  hover:text-slate-900 px-4 py-3 hover:transition-all duration-9000 ease-in-out">Home</a>
       </li>
       
       <li class="mx-4 my-6 md:my-0">
-        <a href="/index.html" class="text-slate-300 hover:bg-pink-700  hover:text-slate-200 px-4 py-3 hover:transition-all duration-9000 ease-in-out">CURRICULUM</a>
-      </li>
-      <li class="mx-4 my-6 md:my-0">
-        <a href="/contact.html" class="text-slate-300 hover:bg-pink-700  hover:text-slate-200 px-4 py-3 hover:transition-all duration-9000 ease-in-out">CONTACT</a>
+        <a href="/index.html" class="text-slate-300 hover:bg-yellow-400  hover:text-slate-900 px-4 py-3 hover:transition-all duration-9000 ease-in-out">Curriculum</a>
       </li>
      
 
 
       <div class="group relative">
-        <li><a href="#" class="text-slate-300  hover:bg-pink-600 hover:text-slate-200 pl-10 text-center px-4 hover:px- hover:py-3">ABOUT</a>
+        <li><a href="#" class="text-slate-300  hover:bg-pink-600 hover:text-slate-200  text-center px-4 hover:px- hover:py-3">About</a>
         </li>
         <ul class="absolute bg-slate-800 border border-2 flex flex-col gap- border-slate-600  text-start hidden h-24  w-80  group-hover:block">
-          <li><a href="/faq.html" class="text-slate-200 hover:text-pink-700">FAQ</a></li> 
-          <li class=""><a href="#" class="text-slate-200 hover:text-pink-700">OUR STORY
+          <li><a href="/faq.html" class="text-slate-200 hover:text-yellow-400">Faq</a></li> 
+          <li class=""><a href="#" class="text-slate-200 hover:text-orange-400">Our Story
                 </a></li>
-            <li><a href="" class="text-slate-200 hover:text-pink-700">BLOG</a></li>
+            <li><a href="" class="text-slate-200 hover:text-lime-400">Blog </a></li>
         </ul>
     </div>
-
+ <li class="mx-4 my-6 md:my-0">
+        <a href="/contact.html" class="text-slate-300 hover:bg-lime-700  hover:text-slate-100 px-4 py-3 hover:transition-all duration-9000 ease-in-out">Contact Us</a>
+      </li>
+     
       <li class="mx-4 my-6 md:my-0">
       </li>
 
       <div class="block">
         
-          <a href="/login.html" class="text-slate-300text-center font-[Poppins] duration-500 text-lg hover:underline px-4 py-3 text-slate-300 rounded">LOGIN</a>
+          <!-- <a href="/login.html" class="text-slate-300text-center font-[Poppins] duration-500 text-lg hover:underline px-4 py-3 text-slate-300 rounded">LOGIN</a> -->
        
       
-          <a href="/signup.html" class=" text-slate-200 text-lg font-[Poppins] duration-500 px-6 py-2 bg-pink-700 hover:bg-pink-800 rounded">SIGNUP</a>
+          <a href="/signup.html" class=" text-slate-200 text-lg duration-500 px-6 py-2 hover:text-black bg-orange-500 hover:bg-orange-600 rounded">Register</a>
        
       </div>
 <h2 class=""></h2>
@@ -97,7 +100,7 @@
   <section class="mt-10">
 
     <div class="about__div">
-      <h1 class="about--h1">ABOUT</h1>
+      <h1 class="about--h1 text-4xl">ABOUT</h1>
 
       <p class="about--p">
         HEPKIDS is the leading online coding school for kids and teens<br> ages 4-17. Our mission is to prepare students for success in the digital<br> world by teaching them how to code.
@@ -106,7 +109,7 @@
 
 
     <div class="story__div">
-      <h1 class="story--h1">
+      <h1 class="story--h1 text-4xl">
         OUR STORY
       </h1>
 
@@ -175,8 +178,10 @@
 
         <div class="footer--div">
           <span class="text-2xl font-[Poppins] cursor-pointer">
-            <h1 class="text-pink-600 font-serif font-extrabold bg-clip-text text-transparent bg-gradient-to-r flex items-center flex-shrink-0 from-pink-700 via-lime-500 to-red-600 text-4xl">HEPKIDS_</h1>
-         
+            <h1
+            class="text-pink-600 font-serif font-extrabold bg-clip-text text-transparent bg-gradient-to-r flex items-center flex-shrink-0 from-orange-700 via-lime-500 to-yellow-200 text-4xl">
+            HEPKIDS_</h1>
+
           </span>
 
       
@@ -219,7 +224,15 @@
           </div>
       
         </div>
-      
+        <div class="flex justify-between ">
+          <div class="inline-flex gap-4">
+              <i class="bx bxl-twitter text-2xl text-orange-500  hover:text-slate-200" ></i>
+              <i class="bx bxl-linkedin text-2xl   text-orange-500 hover:text-slate-200"></i>
+              <i class="bx bxl-instagram text-2xl  text-orange-500  hover:text-slate-200"></i>
+              <i class="bx bxl-pinterest text-2xl  text-orange-500 hover:text-slate-200"></i>
+              <i class="bx bxl-youtube text-2xl  text-orange-500 hover:text-slate-200"></i>
+              <i class="bx bxl-facebook text-2xl  text-orange-500 hover:text-slate-200"></i>
+          </div>
         <div class="copy__right">
           <P class="copy--right-p">Privacy Policy |</P>
           <p class="copy--right-p">Terms of Service |</p>
