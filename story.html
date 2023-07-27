@@ -7,6 +7,7 @@
   <title>Our Story</title>
   <link rel="stylesheet" href="styles.css">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
@@ -100,7 +101,7 @@
   <section class="mt-10">
 
     <div class="about__div">
-      <h1 class="about--h1 text-4xl">ABOUT</h1>
+      <h1 class="about--h1 text-4xl"  data-aos="zoom-in" data-aos-duration="1000">ABOUT</h1>
 
       <p class="about--p">
         HEPKIDS is the leading online coding school for kids and teens<br> ages 4-17. Our mission is to prepare students for success in the digital<br> world by teaching them how to code.
@@ -108,7 +109,7 @@
     </div>
 
 
-    <div class="story__div">
+    <div class="story__div"  data-aos="fade-up" data-aos-duration="1000">
       <h1 class="story--h1 text-4xl">
         OUR STORY
       </h1>
@@ -119,7 +120,7 @@
 
     <!-- ACHIEVEMENTS -->
 
-    <div class="div1__container">
+    <div class="div1__container"  data-aos="fade-left" data-aos-duration="1000">
       <div class="first--div">
         <div><img src="https://www.codewizardshq.com/wp-content/uploads/2019/10/star.svg" height="93px" width="89px" /></div>
         <div class="div-div">
@@ -160,7 +161,7 @@
 
 
 
-      <div class="story__div2">
+      <div class="story__div2"  data-aos="fade-down" data-aos-duration="1000">
         <h1 class="story2--h1">
           We believe computer coding is for everyone, and<br> anyone can learn to write code.
         </h1>
@@ -185,7 +186,7 @@
           </span>
 
       
-          <div class="footer--div--1">
+          <div class="footer--div--1"  data-aos="zoom-in" data-aos-duration="1000">
             <p><a href="#">Programs</a></p>
             <p><a href="#">Summer Programs</a></p>
             <p><a href="#">Homeschool</a></p>
@@ -195,7 +196,7 @@
             <p><a href="#">Calendar</a></p>
           </div>
       
-          <div class="footer--div--2">
+          <div class="footer--div--2"  data-aos="zoom-in" data-aos-duration="1000">
             <p><a href="#">About</a></p>
             <p><a href="#">Scholarships</a></p>
             <p><a href="#">Military</a></p>
@@ -205,7 +206,7 @@
             <p><a href="#">Referral Program</a></p>
           </div>
       
-          <div class="footer--div--3">
+          <div class="footer--div--3"  data-aos="zoom-in" data-aos-duration="1000">
             <p><a href="#">Student Center</a></p>
             <p><a href="#">Reviews</a></p>
             <p><a href="#">FAQs</a></p>
@@ -213,7 +214,7 @@
             <p><a href="#">Enroll</a></p>
           </div>
       
-          <div class="footer--div--4">
+          <div class="footer--div--4"  data-aos="zoom-in" data-aos-duration="1000">
             <p class="text--bold">Mailing Address:</p>
             <p>11900 Jollyville Rd,</p>
             <p>#203278</p> 
@@ -244,7 +245,10 @@
 
   </section>
 
-
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script> 
   <script>
     function Menu(e){
  let list = document.querySelector('ul');
