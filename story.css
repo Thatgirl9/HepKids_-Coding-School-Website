@@ -7,9 +7,13 @@
 :root{
   --general-color:#fff;
   /* --primary-color:#fdc437; */
-  --primary-color:rgb(236,72,153);
+  /* --primary-color:rgb(236,72,153); */
+  --primary-color:rgb(247, 122, 5);
+  --primary-color1:rgb(247, 142,5);
   --secondary-color:#5a686e;
   --text-color:#011e41;
+  --text-color1:rgb(247, 199,5);
+  --text-color2:rgb(247, 211,5);
   /* --text-color:rgb(236,72,153); */
 
   /* --bg-color:#83abba; */
@@ -24,7 +28,8 @@
 
   /*COMMITMENT */
   /* --commitment-color:#e26428; */
-  --commitment-color:rgb(236,72,153);
+  /* --commitment-color:rgb(236,72,153); */
+  --commitment-color:rgb(247, 122, 5);
 
   /* STORY TEXT-COLOR */
   --story--text-color: #000;
@@ -52,7 +57,7 @@ body{
 }
 
 .about--h1:hover, .story--h1:hover{
-  border-bottom:3px solid var(--level-4-color);
+  border-bottom:3px solid var(--text-color1);
 }
 
 .about--p, .story--p{
@@ -139,6 +144,10 @@ body{
   background-color:var(--commitment-color);
 }
 
+.big--line:hover{
+border: 2px solid var(--text-color1);
+}
+
 .story2--p{
   line-height:1.5;
   margin-top:2em;
@@ -186,8 +195,8 @@ p a{
 }
 
 p a:hover{
-  color:var(--primary-color);
-  text-decoration: underline var(--primary-color);
+  color:var(--text-color1);
+  text-decoration: underline var(--text-color2);
 }
 
 

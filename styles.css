@@ -16,9 +16,12 @@ scroll-behavior: smooth;
 :root{
   --general-color:#fff;
   /* --primary-color:#fdc437; */
-  --primary-color:rgb(236,72,153);
+  --primary-color:rgb(247, 122, 5);
+  --primary-color1:rgb(247, 142,5);
   --secondary-color:#5a686e;
   --text-color:#011e41;
+  --text-color1:rgb(247, 199,5);
+  --text-color2:rgb(247, 211,5);
   /* --text-color:rgb(236,72,153); */
 
   /* --bg-color:#83abba; */
@@ -32,8 +35,8 @@ scroll-behavior: smooth;
   --level-4-color:#aa227d;
 
   /*COMMITMENT */
-  /* --commitment-color:#e26428; */
-  --commitment-color:rgb(236,72,153);
+  --commitment-color:rgb(247, 122, 5);
+  /* --commitment-color:rgb(236,72,153); */
 }
 
 body{
@@ -89,7 +92,7 @@ body{
   text-align:center;
   color:var(--primary-color);
   font-size:1.8rem;
-  margin-bottom: 1.9em;
+  margin: 2em 0 1.9em 0;
 }
 
 .div-2__container{
@@ -107,7 +110,9 @@ body{
   text-align: center;
 }
 
-
+.flex__div1{
+  padding: 0 1.5em;
+}
 
 
 .flex__h3{
@@ -133,6 +138,8 @@ body{
   font-weight:bold;
 }
 
+/* BACKGROUND */
+
 .bg-image {
   background-image: url(/assets/img2.jpg);
   background-repeat: no-repeat;
@@ -153,6 +160,8 @@ body{
 }
 
 /* CURRICULUM */
+
+
 
 .curriculum__div{
   display:flex;
@@ -307,6 +316,7 @@ body{
   font-weight:500;
   font-size:1.80rem;
   margin-bottom: 1em;
+  color:var(--commitment-color);
 }
 
 .commit--h3{
@@ -324,9 +334,11 @@ body{
   color:var(--secondary-color);
   padding: 0 2em;
 }
+
 .commit--h2{
   text-align: center;
 }
+
  .commit--h3{
   text-align: center;
   color:var(--commitment-color);
@@ -360,7 +372,7 @@ body{
 
 .commit-btn:hover,
  .commit-btn:active{
-  background-color: var(--level-4-color);
+  background-color: var(--primary-color1);
   color:var(--commitment-color);
   border: none;
   cursor:pointer;
@@ -446,8 +458,8 @@ p a{
 
 
 p a:hover{
-  color:var(--primary-color);
-  text-decoration: underline var(--primary-color);
+  color:var(--text-color1);
+  text-decoration: underline var(--text-color2);
 }
 
 
