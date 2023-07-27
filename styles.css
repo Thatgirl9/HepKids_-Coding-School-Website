@@ -1,7 +1,12 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Borel&display=swap'); */
+  /* @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap'); */
+  @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap');
+
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
+  font-family:'DM Serif Display', serif;
 }
 html{
 
@@ -136,12 +141,6 @@ body{
   background-size: cover;
   height: 100%;
   width: 100%;
-  /* opacity: 0; */
-  /* background-opacity:50 ; */
-  /* opacity: calc(100% - 0.5); */
-  /* background-color: rgba(0, 0, 0, 3); */
-
-
 }
 .bg-overlay {
   position: absolute;
@@ -150,7 +149,7 @@ body{
   right: 0;
   bottom: 0;
   height: auto;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) to control the darkness */
+  background-color: rgba(47, 9, 9, 0.5); /* Adjust the last value (0.5) to control the darkness */
 }
 
 /* CURRICULUM */
