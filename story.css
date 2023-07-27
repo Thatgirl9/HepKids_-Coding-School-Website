@@ -288,6 +288,7 @@ p a:hover{
 
 .copy__right{
   display:flex;
+  /* flex-direction: row; */
   gap:0.4em;
   margin-top: 2em;
   justify-content: right;
