@@ -47,9 +47,8 @@ body{
 
 .div1__container{
   display:flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  background-color: var(--bg-color);
   /* gap:4em; */
   margin-bottom: 9em;
 }
@@ -170,13 +169,36 @@ body{
   left: 0;
   right: 0;
   bottom: 0;
-  height: auto;
-  background-color: rgba(47, 9, 9, 0.5); /* Adjust the last value (0.5) to control the darkness */
+  height:80% ;
+  background-color: rgba(4, 9, 9, 0.5); /* Adjust the last value (0.5) to control the darkness */
 }
 
 /* CURRICULUM */
+li a:hover{
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border: 1px solid black;
+  /* position: fixed; */
+}
+
+.relative button{
+  border-bottom-right-radius: 60%;
+  border-top-left-radius: 60%;
+  border: 2px solid black;
+  /* position: absolute; */
+}
+.relative button:hover{
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 50%;
+  background: none;
+}
 
 
+/* .block li:hover{
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border: 5px solid black;  
+} */
 
 .curriculum__div{
   display:flex;
